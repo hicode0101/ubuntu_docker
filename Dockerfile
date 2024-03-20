@@ -7,7 +7,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-# 设置 root 用户的密码为 'root'
+# 设置 root 用户的密码为 'Abc321'
 RUN echo 'root:Abc321' | chpasswd
 
 # 暴露 22 端口
